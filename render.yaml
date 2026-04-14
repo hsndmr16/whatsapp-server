@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: whatsapp-server
+    runtime: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: API_KEY
+        value: nakliyat2026secret
+      - key: NODE_ENV
+        value: production
