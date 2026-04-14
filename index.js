@@ -25,7 +25,7 @@ async function startWhatsApp() {
 
   sock = makeWASocket({
     auth: state,
-    printQRInTerminal: true,
+    printQRInTerminal: false,
     logger: pino({ level: 'silent' }),
     browser: ['sehirlerarasinakliyat', 'Chrome', '120.0.0'],
     connectTimeoutMs: 60000,
